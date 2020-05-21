@@ -2,8 +2,9 @@ _NOTE: This is an example, and not an official registry._
 
 # Solution Pattern Registry
 
-This repository contains a registry of solution patterns. If you'd like to add
-your Solution Pattern follow the instructions [here](#contributing-a-pattern).
+This repository contains a registry of Solution Patterns that are reusable. If
+you'd like to add your Solution Pattern follow the instructions
+[here](#contributing-a-pattern).
 
 ## Patterns
 
@@ -15,7 +16,7 @@ _NOTE: We could generate a simple gh-pages site using the `patterns.json` instea
 ## Contributing a Pattern
 1. Ensure your Solution Pattern repository contains a `walkthroughs-config.json` at it's root with the following fields:
   * `prettyName` (String)
-  * `authors` (Array)
+  * `authors` (Object[])
   * `authors[*].name` (String)
   * `authors[*].email` (String)
   * `tags` (String[])
