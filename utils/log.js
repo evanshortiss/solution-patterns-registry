@@ -19,4 +19,4 @@ function _log (prefix, args) {
 
 exports.error = (...args) => _log('ERROR', args)
 exports.info = (...args) => _log('INFO', args)
-exports.info = (...args) => _log('WARN', args)
+exports.warn = (...args) => _log('WARN', args)
