@@ -1,0 +1,31 @@
+{
+  "name": "solution-patterns-registry",
+  "version": "0.1.0",
+  "description": "A centralised location for Integreatly Solution Pattern discovery",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write --single-quote --no-semi scripts/*.js",
+    "test": "npm run validate-patterns",
+    "validate-patterns": "node scripts/verify-patterns.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evanshortiss/solution-patterns-registry.git"
+  },
+  "keywords": [],
+  "author": "Evan Shortiss",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/evanshortiss/solution-patterns-registry/issues"
+  },
+  "homepage": "https://github.com/evanshortiss/solution-patterns-registry#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "ajv": "~6.12.2",
+    "barelog": "~0.2.0",
+    "got": "~11.1.4",
+    "husky": "~4.2.5",
+    "p-queue": "^6.4.0",
+    "prettier": "~2.0.5"
+  }
+}

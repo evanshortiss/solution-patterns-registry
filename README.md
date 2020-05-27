@@ -20,14 +20,17 @@ _NOTE: We could generate a simple gh-pages site using the `patterns.json` instea
   * `authors[*].name` (String)
   * `authors[*].email` (String)
   * `tags` (String[])
-  * `versions` (String[]) - Integreatly versions you've tested for compatibility
+  * `rhmiVersions` (String[]) - Integreatly versions you've tested for compatibility
+  * `hasPreRequisites` (Boolean) - Indicates that your patterns require prerequisite configuration on the Integreatly cluster prior to use
 1. Fork this repository
 1. Add a link to your pattern repo to the *patterns.txt* file
 1. Add a link to your pattern repo to the *README.md* file
 1. Open a PR
 
 
-## Sample Walkthroughs Config JSON
+## Walkthroughs Config JSON
+
+The schema for the `walkthrough-configs.json` can be found [here](/schema.json)
 ```json
 {
   "prettyName": "AppDev Patterns",
@@ -42,6 +45,7 @@ _NOTE: We could generate a simple gh-pages site using the `patterns.json` instea
     }
   ],
   "tags": ["camelk", "kafka", "nodejs", "quarkus"],
-  "versions": ["1.6"]
+  "rhmiVersions": ["1.6"],
+  "hasPreRequisites": false
 }
 ```
